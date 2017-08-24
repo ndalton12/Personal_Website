@@ -63,13 +63,17 @@ blockquote {
 .navbar-wrapper .navbar {
   padding-right: 15px;
   padding-left: 15px;
-  font-family: Montserrat, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 15px;
 }
 
 .navbar-right {
   letter-spacing: 2px;
   font-size: 13px !important;
+}
+
+.nav {
+  letter-spacing: 2px;
 }
 
 .navbar-wrapper .navbar .container {
@@ -199,7 +203,7 @@ blockquote {
 /* cool button stuff from https://codepen.io/Gingernaut/pen/qOgMLy */
 
 #continue-btn {
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-size: 17px;
   letter-spacing: 1px;
 }
