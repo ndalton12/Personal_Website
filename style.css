@@ -42,6 +42,10 @@ blockquote {
   border-left: 3px solid #244FD1;
 }
 
+#welcome-para {
+  font-family: 'Raleway';
+}
+
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
