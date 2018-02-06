@@ -37,6 +37,9 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:700|Roboto:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
+    <!-- See /LIGHTBOX_JS_LICENSE -> Copyright (c) 2015 Lokesh Dhakar http://lokeshdhakar.com/projects/lightbox2/ -->
+    <link href="dist/css/lightbox.css" rel="stylesheet">
+
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -89,14 +92,26 @@
                 <p class="lead p-grey">My Senior Independent Study Project (SISP) revolves around learning Python, a high-level, 
                     multi-paradigm, interpreted language. I had some prior experience in Python, but I'm learning it more in-depth by focusing on 
                     data science applications, primarily machine learning. Currently, I'm working on <a href="https://github.com/ndalton12/Python-Learning/tree/master/ML/Higgs_Model">
-                    a deep neural network for classfying Higgs Boson data</a>. View the repo <a href="https://github.com/ndalton12/Python-Learning">here</a>.
+                    a deep neural network for classfying Higgs Boson data</a>. View the repo
+                    <a href="https://github.com/ndalton12/Python-Learning">here</a>.
                 </p>
             </div>
             <div class="col-md-5">
-                <img class="featurette-image img-responsive center-block" src="images/tensorboard.png" alt="tensorboard">
+                <a href="images/tensorboard.png" data-lightbox="tensorboard">
+                    <img class="featurette-image img-responsive center-block" src="images/tensorboard.png" alt="tensorboard">
+                </a>
                 <div class="caption text-center">
                     <p class="p-grey">Some example training runs for a deep neural network written with Tensorflow displayed on Tensorboard.</p>
                 </div>
+                
+                <!-- <br> TODO: FIX THIS PICTURE ********************
+
+                <a href="images/tensorboard.png" data-lightbox="tensorboard">
+                    <img class="featurette-image img-responsive center-block" src="images/tensorboard.png" alt="coming_soon">
+                </a>
+                <div class="caption text-center">
+                    <p class="p-grey">An example of semantic hashing.</p>
+                </div> -->
             </div>
         </div>
 
@@ -111,7 +126,9 @@
                     </p>
                 </div>
                 <div class="col-md-5 col-md-pull-7">
-                    <img class="featurette-image img-responsive center-block" src="images/afg.JPG" alt="students">
+                    <a href="images/afg.JPG" data-lightbox="afg2">
+                        <img class="featurette-image img-responsive center-block" src="images/afg.JPG" alt="students">
+                    </a>
                     <div class="caption text-center">
                         <p class="p-grey">My team for Apps for Good and our poster.</p>
                     </div>
@@ -132,7 +149,9 @@
                     </p>
                 </div>
                 <div class="col-md-5">
-                    <img class="featurette-image img-responsive center-block" src="images/rnn_graph.PNG" alt="graph">
+                    <a href="images/rnn_graph.PNG" data-lightbox="rnn">
+                        <img class="featurette-image img-responsive center-block" src="images/rnn_graph.PNG" alt="graph">
+                    </a>
                     <div class="caption text-center">
                         <p class="p-grey">A graph of predictions on Apple stock. Note the scale of the y-axis and that the x-axis represents days.
                             The blue dots represent our model's prediction and the red dots represent real data.
@@ -140,8 +159,6 @@
                     </div>
                 </div>
         </div>
-
-
     </div>
 
     <div class="container">
@@ -166,6 +183,7 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
 
   </body>
 </html>

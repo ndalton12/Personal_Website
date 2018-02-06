@@ -37,6 +37,9 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:700|Roboto:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
+    <!-- See /LIGHTBOX_JS_LICENSE -> Copyright (c) 2015 Lokesh Dhakar http://lokeshdhakar.com/projects/lightbox2/ -->
+    <link href="dist/css/lightbox.css" rel="stylesheet">    
+
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -104,7 +107,9 @@
 
         <br>
         
-        <img src="images/chs.jpg" class="img-thumbnail img-responsive center-block" alt="Chelmsford High" width="400" height="236">
+        <a href="images/chs.jpg" data-lightbox="chs">
+            <img src="images/chs.jpg" class="img-thumbnail img-responsive center-block" alt="Chelmsford High" width="400" height="236">
+        </a>
         <div class="caption text-center">
                 <p class="p-grey">Chelmsford High School.</p>
         </div>
@@ -117,6 +122,10 @@
         <hr class="featurette-divider">
 
         <p class="p-grey p-med">
+            The <a href="http://www.massacademy.org/">Massachusetts Academy of Math and Science</a> is a free, co-educational, public school of excellence that enrolls approximately 100 
+            academically accelerated 11th and 12th grade students from Massachusetts. Math and science are emphasized within a comprehensive, interactive 
+            academic program. </p>
+            <br><br> <!--
             Junior year is an intense courseload with classes that exceed AP depth. We took classes in physics, math modeling, science and technical writing
             , foreign language (Spanish for me), STEM I AND II, computer science, and humanities. In physics, we learn a curriculum that covers both 
             AP Physics 1 and SAT Physics topics. The workload in physics is thusly large, with homework every night in addition to practice problems and labs.
@@ -129,13 +138,133 @@
             and an app at the end of the year. In the middle, most students learn Java, but those that already know it complete an independent project. You can
             see mine on the <a href="proj.html">Projects and Research Page</a>, which also includes the app I made with my team. Last but certainly not least,
             Humanities is a sort of dual purpose course, covering both English and History, as well as cultural aspects such as art. In Humanities, we discuss
-            a wide plethora of literature and do many essays to improve our writing and grammatical skills. A portfolio with work from my classes in Junior year
-            is in development and will be posted soon.
-        </p>
+            a wide plethora of literature and do many essays to improve our writing and grammatical skills.
+        </p> -->
+
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#menu0">Physics</a></li>
+            <li><a data-toggle="tab" href="#menu1">Computer Science</a></li>
+            <li><a data-toggle="tab" href="#menu2">Math</a></li>
+            <li><a data-toggle="tab" href="#menu3">Humanities</a></li>
+            <li><a data-toggle="tab" href="#menu4">Spanish</a></li>
+            <li><a data-toggle="tab" href="#menu5">STEM</a></li>
+            <li><a data-toggle="tab" href="#menu6">STW</a></li>
+            <li><a data-toggle="tab" href="#menu7">Community Service</a></li>
+        </ul>
+            
+        <div class="tab-content">
+            <div id="menu0" class="tab-pane fade in active">
+                <h3>Physics</h3>
+                <p class="p-grey p-med">
+                    Physics is taught by Mr. Ellis. 
+                    Over the year, we learned about kinematics, forces, energy, momentum, rotational mechanics, and more. 
+                    For some chapters we do an extended word problem called an über problem. Our first uber problem was a kinematics problem
+                    based on a rocket. The problem and my solution are shown <a href="pdf/uber.pdf">here</a>.
+                </p>
+                <hr>
+                <p class="p-grey p-med">
+                    Another assignment we've had is the spring lab, which involved springs, as the name implies. This lab was for the energy unit.
+                    My group used a ramp and a cart attached to a post at the top of the ramp. We measured how far the cart was displaced by changing 
+                    the ramp angle. You can see a picture and the write-up in the PDF <a href="pdf/lab.pdf">here</a>.
+                </p>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <h3>Computer Science</h3>
+                <p class="p-grey p-med">
+                        In computer science class we learn how program computer systems and we learn various other applications of coding. 
+                        Our first project is to create our own website, which is the one you see right now. 
+                        Later in year we have a big group project to create an app that helps out the community in some way. 
+                        You can see that app and another project I did in computer science on my <a href="proj.html">Projects</a> page.
+                </p>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <h3>Math</h3>
+                <p class="p-grey p-med">
+                        In math class, we are mostly did larger problems in groups. For example, we did a project based on optimizing a bus
+                        route for a school. In November, our class took part in HiMCM, a 36 hour math competition. 
+                        There were two different topics from which you could choose to work on and our group choose a problem based on optimizing
+                        warehouse placement. We overlaid various maps with the range of 1-day shipping from a given location and looked for 
+                        solutions that covered all of the continental US. The paper we wrote for HiMCM is <a href="pdf/himcm.pdf">here</a>.
+                </p>
+                <hr>
+                <p class="p-grey p-med">
+                        In math class we often use software called Mathematica, which is the language behind Wolfram Alpha. 
+                        An example of one of the assignments we had to do in Mathematica is pictured below. In this assignment, 
+                        my group had to find a method of calculating which gas station would be the optimal choice given a set of criteria. 
+                        Shown <a href="pdf/gas.pdf">here</a>.
+                </p>
+            </div>
+            <div id="menu3" class="tab-pane fade">
+                    <h3>Humanities</h3>
+                    <p class="p-grey p-med">
+                            Humanities is essentially a combined version of English and History. We learned about a myriad of different time periods
+                            and subjects to create a holistic learning experience. One essay we did was on ancient Egyptian love poetry,
+                            which you can read <a href="pdf/essay1.pdf">here</a>. In this essay, I discuss how figurative langauge is 
+                            used to portray beliefs about love.
+                    </p>
+                    <hr>
+                    <p class="p-grey p-med">
+                            Another essay I did was on Stephen Crane's Maggie: A Girl of the Streets. You can read about how Crane criticizes 
+                            Christianity <a href="pdf/essay2.pdf">here</a>.
+                    </p>
+            </div>
+            <div id="menu4" class="tab-pane fade">
+                    <h3>Spanish</h3>
+                    <p class="p-grey p-med">
+                            Spanish class is a total immersion style wherein we could only speak in Spanish.
+                            Although it was hard for some, it provided us with a lot of experience and I think it really helped us develop 
+                            our skills as Spanish speakers. We occasionally have to write essays in the class. We did a first person essay as one
+                            of the characters from Los Diarios Motocicletas. I did mine on Ernesto (Che), which you can see 
+                            <a href="pdf/spanish_essay.pdf">here</a>.
+                    </p>
+                    <hr>
+                    <p class="p-grey p-med">
+                            Another presentation we did was on preparing a traditional Spanish dish. For mine, I made patatas bravas, 
+                            which are essentially potatoes with a spicy tomato sauce. The presentation, with pictures of the dish, is shown 
+                            <a href="pdf/food.pdf">here</a>. For the presentation, we had to use the preterite to describe how we made the food.
+                    </p>
+            </div>
+            <div id="menu5" class="tab-pane fade">
+                    <h3>STEM</h3>
+                    <p class="p-grey p-med">
+                            In STEM we explore various science, technology, engineering, and mathematical topics and ideas. 
+                            The end goal is for everyone to develop and work on their own large science fair project and present it at various showings.
+                            My STEM project is based on creating a quantum algorithm for square root calculations. As a part of the STEM project, 
+                            we were required to write a paper. My paper covers quantum mechanics, algorithmic efficiency, and basic concepts 
+                            of quantum computation. You can read mine <a href="pdf/stem.pdf">here</a>.
+                    </p>
+                    <hr>
+                    <p class="p-grey p-med">
+                            Later in the year, we worked on a second project, this time a group project. My group focused on creating an assitive wallet.
+                            You can read our final paper <a href="pdf/stem2.pdf">here</a>.
+                    </p>
+            </div>
+            <div id="menu6" class="tab-pane fade">
+                    <h3>STW</h3>
+                    <p class="p-grey p-med">
+                            STW stands for science and technical writing. In STW we learned how to write in a more formal and scientific fashion and 
+                            how to effectively communicate information to our audiences. This built into the STEM class where we had to do a 
+                            lot of writing about our STEM projects. I don’t find grammar and technical writing to be super fun, but we read a lot of 
+                            interesting articles about science which made the class more interesting. One writing assignment I did is 
+                            a mock grant proposal for the Engineering Girl contest. I did mine on saving tigers, the world's biggest cats. You can 
+                            read it <a href="pdf/cat.pdf">here</a>.
+                    </p>
+            </div>
+            <div id="menu7" class="tab-pane fade">
+                    <h3>Community Service</h3>
+                    <p class="p-grey p-med">
+                            Mass Academy requires 50 hours of community service for each school year. In my junior year, I volunteered at a summer robotics
+                            camp at WPI and at Mass Academy's own Computer Quest. At both, I taught middle school aged children about technology and how to
+                            become better problem solvers. 
+                    </p>
+            </div>
+        </div>
 
         <br>
-        
-        <img src="images/mass_academy_2.PNG" class="img-thumbnail img-responsive center-block" alt="Mass Academy" width="500" height="236">
+
+        <a href="images/mass_academy_2.PNG" data-lightbox="mams">
+            <img src="images/mass_academy_2.PNG" class="img-thumbnail img-responsive center-block" alt="Mass Academy" width="500" height="236">
+        </a>
         <div class="caption text-center">
                 <p class="p-grey">Mass Academy.</p>
         </div>
@@ -151,11 +280,53 @@
             Senior year is a chance for students to take all their courses at WPI, essentially as a freshman in college. This year, I'm taking 
             courses in Mechanics, Robotics, Discrete Mathematics, Algorithms, and Calculus I-IV. We are also required to take a number of
             Humanities courses, for which I'm taking Macroeconomics, Psychology, Science Literature, and British Literature. Another
-            important part of senior year is the Senior Independent Study Project (SISP). 
-            You can see mine on the <a href="proj.html">Projects and Research</a> page.
+            important part of senior year is the Senior Independent Study Project (SISP).
+            You can see mine on the <a href="proj.html">Projects and Research</a> page. Below you will find some interesting projects from
+            different classes.
         </p>
 
-        <img src="images/cowsay.png" class="img-thumbnail img-responsive center-block" alt="SISP" width="700" height="236">
+        <br><br>
+
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#m0">Robotics</a></li>
+            <li><a data-toggle="tab" href="#m1">Psychology</a></li>
+            <li><a data-toggle="tab" href="#m2">Macroeconomics</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="m0" class="tab-pane fade in active">
+                <h3>Robotics</h3>
+                <p class="p-grey p-med">
+                    Introduction to Robotics is a course that covers the mechanical, electrical, and computational aspects of robotics. This course
+                    featured long lab projects and lots of homework covering torque calculations, solving circuits, and programming. Our final project
+                    was to create a robot that could compete in a competition for placing tennis and ping-pong balls in small tubes. We had to complete
+                    calculations and justifications for our design and write-up a final paper, which you can read <a href="pdf/rbe.pdf">here</a>. 
+                </p>
+            </div>
+            <div id="m1" class="tab-pane fade">
+                <h3>Psychology</h3>
+                <p class="p-grey p-med">
+                    In Introduction to Psychology, we covered behaviors, emotions, happiness, and much more. As a part of the class, we were required
+                    to make a survey and have 10 people fill it out. Despite having a very small dataset, I decided to do some interesting data analysis
+                    in my paper, <a href="pdf/psych.pdf">here</a>, which covers the influence of weather on anxiety. Some of the results 
+                    I found to be surprising, and the I think the analysis provides solid insight into the data.
+                </p>
+            </div>
+            <div id="m2" class="tab-pane fade">
+                <h3>Macroeconomics</h3>
+                <p class="p-grey p-med">
+                    In Macroeconomics, we learned about demand, supply, market equilibrium, opportunity cost, etc. Our final project required us to create
+                    a poster exploring the economic status of a country. My group did our study on Sweden. 
+                    You can see our poster <a href="pdf/poster.pdf">here</a>.
+                </p>
+            </div>
+        </div>
+
+        <br>
+
+        <a href="images/cowsay.png" data-lightbox="cowsay">
+            <img src="images/cowsay.png" class="img-thumbnail img-responsive center-block" alt="SISP" width="700" height="236">
+        </a>
         <div class="caption text-center">
                 <p class="p-grey">While doing my SISP, I've also been learning about the joys of an awesome shell program called cowsay.</p>
         </div>
@@ -184,6 +355,7 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
 
   </body>
 </html>

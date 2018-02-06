@@ -37,6 +37,9 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:700|Roboto:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
+    <!-- See /LIGHTBOX_JS_LICENSE -> Copyright (c) 2015 Lokesh Dhakar http://lokeshdhakar.com/projects/lightbox2/ -->
+    <link href="dist/css/lightbox.css" rel="stylesheet">
+
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -88,12 +91,14 @@
         <p class="p-grey p-med">My name is Niall (Nile) Dalton. I'm Irish-American and I was named after an ancient Irish king.
             I love to learn and my favorite topics are robotics and computer science, as well as physics. 
             I teach middle schoolers, which I've been doing since freshman year. I have one brother, Eoghan, and a sister, Olivia.
-            
+            In the future, I hope to become a researcher or start my own technology business.
         </p>
 
         <br>
-    
-        <img src="images/me.jpg" class="img-thumbnail img-responsive center-block" alt="Me" width="400" height="236">
+
+        <a href="images/me.jpg" data-lightbox="me">
+            <img src="images/me.jpg" class="img-thumbnail img-responsive center-block" alt="Me" width="400" height="236">
+        </a>
         <div class="caption text-center">
                 <p class="p-grey">Me. The guy with the orange hair in the back is my brother.</p>
         </div>
@@ -103,12 +108,15 @@
         <p class="p-grey p-med">Some things I like are Netflix, video games, and just technology in general. My favorite shows are Mr. Robot, 
             Psych, and How I Met Your Mother and my favorite video games are The Witcher 3 and Dota 2. Some other favorites include pasta for 
             food, blue for color, and alt. rock for music. I also have a dog, Tucker, pictured below. He's a Wheaton Terrier.
-            In addition, I like to play badminton and I played lacrosse from 5th to 10th grade. 
+            In addition, I like to play badminton and I played lacrosse from 5th to 10th grade. If you want to learn more, check out my other pages or
+            <a href="contact.html">contact</a> me.
         </p>        
 
         <br>
 
-        <img src="images/tucker.jpg" class="img-thumbnail img-responsive center-block" alt="Cinque Terre" width="600" height="236">
+        <a href="images/tucker.jpg" data-lightbox="tucker">
+            <img src="images/tucker.jpg" class="img-thumbnail img-responsive center-block" alt="Cinque Terre" width="600" height="236">
+        </a>
         <div class="caption text-center">
                 <p class="p-grey">Tucker, my dog.</p>
         </div>
@@ -138,6 +146,7 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
 
   </body>
 </html>
